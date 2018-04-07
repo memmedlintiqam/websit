@@ -1,0 +1,415 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{margin:0; pading:0;}
+body{
+	//background-color: #CFC;
+	height: 1000px;
+	width: 100%;
+} 
+header{
+	background-color: rgba(19,135,159,1);
+	//height: 670px;
+	width: 100%;
+	overflow:hidden;
+	padding-bottom:3%;
+}
+#headfoto{
+	//background-color: #0C0;
+	height: 670px;
+	width: 60%;
+	position: absolute;
+}
+header #headfoto img{
+	height: 100%;
+	width: 100%;
+}
+#average{
+	//background-color: #6C6;
+	//height: 670px;
+	width: 80%;
+	margin:0 auto;
+	overflow:hidden;
+}
+header #average nav{
+	//background-color: #336;
+	//height: 130px;
+	width: 100%;
+	overflow:hidden;
+}
+
+header #average nav h1 {
+	text-decoration: none;
+	padding-top:3%;
+	//background:purple;
+	float:left;
+	padding-right:2%;
+}
+
+header #average nav h1 a{
+	color: #FFF;
+	background-color: tomato;
+	padding: 6%;
+	text-decoration: none;
+	font-size: 30px;
+	border-radius:4px;
+	display:block;
+}
+header #average nav #word{
+	//background-color: #C93;
+	//height: 60px;
+	//width: 10%;
+	float:left;
+	padding-top:4%;
+	//margin-top:-3%;
+	margin-left:5%;
+	margin-right:5%;
+}
+
+header #average nav .fa{
+	font-size: 30px;
+	color: #FFF;
+	float:left;
+	margin-right:10px;
+	//background:orange;
+}
+header #average nav #word P{
+	font-size: 24px;
+	color: #FFF;
+	font-weight: bold;
+	float:right;
+}
+
+header #average nav button{
+	background-color: #FFCC00;
+	color: #000;
+	border: none;
+	padding: 1%;
+	margin-left: 39%;
+	float:right;
+	margin-top: 2%;
+	//position: absolute;
+	font-size: 18px;
+	border-radius: 4px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-weight: bold;
+	text-align: center;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	
+}
+header #average nav button:hover{
+	background-color:  #F90;
+}
+
+
+header #average nav button .fa{
+	font-size: 22px;
+	color: #000;
+}
+header #average #about{
+	//background-color: #FCF;
+	height: 300px;
+	width: 50%;
+	margin-top:10%;
+	float:left;
+}
+header #average #about span{
+	font-size: 34px;
+	color: #FFF;
+	font-weight: bold;
+}
+header #average #about p{
+	font-size: 18px;
+	color: #FFF;
+	line-height: 35px;
+	margin-top: 4%;
+}
+header #average #about p .fa{
+	background-color: #FFCC00;
+	color:rgba(19,135,159,1);
+	border-radius:10px;
+}
+header #average #search{
+	background-color: #FFF;
+	height: 400px;
+	width: 32%;
+	float: right;
+	margin-top: 5%;
+}
+header #average #search #searchcenter{
+	//background-color: #6CF;
+	height: 400px;
+	width: 80%;
+	margin:0 auto;
+}
+header #average #search p{
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	padding:5%;
+}
+header #average #search #searchcenter span{
+	font-size: 16px;
+}
+header #average #search #searchcenter span .fa{
+	color: #FC0;
+	font-size: 16px;
+	margin-right: 1%;	
+}
+header #average #search #searchcenter h6{
+	font-size: 16px;
+	font-weight: lighter;
+	padding:5%;
+}
+header #average #search #searchcenter input{
+	padding: 8%;
+	width: 83%;	
+	border:none;
+	}
+header #average #search #searchcenter button{
+	color: #000;
+	background-color: #FFCC00;
+	padding: 7%;
+	width: 100%;
+	font-weight: bold;
+	border: none;
+	border-radius: 5px;
+	margin-top: 9%;
+	font-size: 24px;
+	cursor:pointer;
+	transition-duration: 0.4s;
+}
+header #average #search #searchcenter button:hover{
+	background-color: #F90;
+}
+aside{
+	background-color: #EEEEEE;
+	//height: 500px;
+	width: 100%;
+}
+#asidecenter{
+	background-color: #EEEEEE;
+	//height: 500px;
+	width: 80%;
+	margin:0 auto;
+	overflow:hidden;
+	padding-bottom:3%;
+}
+aside h1{
+	text-align: center;
+	padding-top: 5%;
+	font-size: 28px;	
+}
+aside .person{
+	background-color: #fff;
+	height: 150px;
+	width: 23%;
+	border-radius: 5px;
+	margin-top: 4%;
+	-webkit-box-shadow: -1px 2px 29px -8px rgba(0,0,0,1);
+-moz-box-shadow: -1px 2px 29px -8px rgba(0,0,0,1);
+box-shadow: -1px 2px 29px -8px rgba(0,0,0,1);
+	float: left;
+	margin-right:10px;
+	margin-left:1%;
+}
+aside .person .fa{
+	font-size: 44px;
+	color: #D4D4D4;
+	margin-left:10%;
+	margin-top:18%;
+}
+aside .person .ad{
+	//background-color: #FC9;
+	height: 100px;
+	width: 65%;
+	float:right;
+	margin-top:11%;
+}
+aside .person .ad h1{
+	font-size: 18px;
+	text-align: left;
+	line-height: 130%;
+}
+aside .person .ad p{
+	margin-top:3%;
+}
+
+#icon{
+	//background-color: #C90;
+	height: 350px;
+	width: 80%;
+	margin: 0 auto;
+}
+#icon .iconbox{
+	//background-color: #FC9;
+	height: 280px;
+	width: 30%;
+	float:left;
+	margin-right:3.2%;
+}
+#icon .iconbox .fa{
+	font-size: 76px;
+	color: #B83D3D;
+	//background-color: #F90;
+	margin-left: 37%;
+	margin-top: 15%;
+	padding: 2%;	
+}
+
+#icon .iconbox h1{
+	font-size: 18px;
+	margin-top: 10%;
+	text-align: center;
+}
+#xett{
+	//background-color: #093;
+	//height: 10px;
+	width: 80%;
+	margin:0 auto;
+}
+footer{
+	//background-color: #FCF;
+	height: 100px;
+	width: 80%;
+	margin:0 auto;
+}
+footer #poct{
+	//background-color: #336;
+	height: 50px;
+	width: 16%;
+	margin-top:5%;
+}
+footer #poct img{
+	height: 100%;
+	width: 100%;
+	
+}
+footer #logo{
+	//background-color: #0C9;
+	height: 50px;
+	width: 15%;
+	float:right;
+	margin-top:-3.5%;
+	margin-right:67%;
+}
+footer #tel{
+	//background-color: #0C0;
+	height: 50px;
+	width: 10%;
+	margin-left:90%;
+	margin-top:-4.3%;
+}
+
+footer #tel .fa{
+	font-size: 28px;
+	color: #FC0;
+	position:absolute;
+}
+footer #tel p{
+	font-size: 22px;
+	font-weight:bold;
+	position:absolute;
+	margin-left:2.2%;
+}
+
+@media screen and (max-width: 1270px) {
+	header #average nav h1 a{
+	//background-color: #669;		
+	}
+	
+	aside .person{
+	width:31%;
+	}
+		
+    }
+
+
+@media screen and (max-width: 1150px) {
+	header #average nav h1 a{
+	//background-color: #669;		
+	}
+	
+	header #average nav button{
+	margin-left:29%;
+	}
+		
+	header #average #search{
+			width:38%;
+	}
+	
+	}
+	@media screen and (max-width: 960px) {
+		header #average nav h1 a{
+	//background-color: #669;		
+	}
+	aside .person{
+		width:45%
+	}
+	header #average nav button{
+		margin-left:19%;
+		}
+	}
+	
+	@media screen and (max-width: 770px) {
+	header #average nav h1 a{
+	//background-color: #669;		
+	}
+	header #average nav button{
+	margin-left:9%;
+	}
+	header #average #search{
+	width:48%;
+	}
+	}
+	
+	@media screen and (max-width: 660px) {
+		header #average nav h1 a{
+	//background-color: #669;}	
+	aside .person{
+	width:95%;}
+	#icon .iconbox{
+    width:95%;}
+	header #average #search{
+	width:100%;
+	//float:none;
+	padding-bottom:8%;
+	}
+	header #average nav button{
+		width:50%;
+		float:none;
+		margin-left:0%;}
+	#headfoto{
+		display:none;}
+		
+	header #average #about{
+	width:100%;
+	}
+	
+	footer #poct{
+		width:16%;
+		height:35px;
+	}
+	footer #tel{
+	//background-color: #0C0;
+	height: 50px;
+	width: 18%;
+	//margin-top:115%;
+	float:left;
+	padding-left:5%;
+}
+footer #tel p{
+	font-size: 22px;
+	font-weight:bold;
+	position:absolute;
+	margin-left:6%;
+
+
+	}
+	
+	header #average #about{
+height: 450px;
+	
+	}
+	}
