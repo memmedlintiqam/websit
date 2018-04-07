@@ -1,0 +1,572 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0; pading:0; box-sizing:border-box;}
+body{
+	background-color: #E0E0E0;	
+}
+ header{
+	
+	height: 120px;
+	width: 80%;
+    margin:0 auto;
+}
+#biznes{
+	//height: 50%;
+	width: 20%;
+	margin-top: 2%;
+	float:left;
+	background:green;
+}
+
+#biznes h1{
+	background-color: #3C3C3C;
+	padding: 5%;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-size: 28px;
+	color: #FFF;
+}
+#icon{
+	
+	width: 25%;
+	height:35%;
+	margin-left: 5%;
+	margin-top: 3%;
+	margin-left:25%;
+	float:left;
+	
+}
+#icon .fa{
+	color: #FFF;
+	background-color: #3C3C3C;
+	padding: 3%;
+	border-radius: 80px;
+	font-size: 20px;
+	
+}
+input[type=text] {
+	width: 25%;
+	box-sizing: border-box;
+	border: 2px solid #3C3C3C;
+	font-size: 16px;
+	background-color:#E0E0E0;
+	background-image: url(search.jpg);
+	background-position: 100% 45%;
+	background-repeat: no-repeat;
+	padding: 1%;
+	margin-top: 3%;
+	float: right;
+}
+nav{
+	background-color: #f64f2c;
+	height: 53px;
+	width: 100%;
+	margin-top:-1%;
+}
+nav #menu{
+	height: 53px;
+	width: 80%;
+	margin:0 auto;
+	margin-top:-1%;
+}
+ul{
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f64f2c;
+	
+}
+li {
+    float: left;
+}
+li a {
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 18px 20px;
+	text-decoration: none;
+	border-right: 0.1px solid #F5F5F5;
+	font-weight: bold;
+    transition-duration: 0.4s;
+}
+li a:hover{
+	background-color:  #3C3C3C;
+}
+#foto{
+	background-color: #033;
+	height: 540px;
+	width: 100%;
+}
+#foto img{
+	height: 540px;
+	width: 100%;
+	position: absolute;
+}
+#color{
+	background-color: rgba(0,0,0,0.5);
+	height: 520px;
+	width: 100%;
+	display: inline-block;
+	position: absolute;
+}
+#soz{
+	height: 520px;
+	width: 55%;
+	margin: 0 auto;
+}
+
+
+#soz h1{
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-size: 37px;
+	color: #FFF;
+	text-align: center;
+	padding-top:17%;
+}
+#soz p{
+	font-size: 24px;
+	color: rgba(255,255,255,0.6);
+	padding-top: 3%;
+	text-align: center;
+}
+#soz a{
+	text-decoration: none;
+	padding: 1%;
+	background-color: rgba(255,255,255,0.3);
+	color: #FFF;
+	border: 2px solid white;
+	margin-left: 23%;
+	margin-top:2%;
+	position: absolute;    
+	transition-duration: 0.4s;
+}
+	
+#soz a:hover{
+	background:rgba(51,51,51,0.5);
+	border: 2px solid #333 ;
+}
+
+	#container{
+	height: 1400px;
+	width: 80%;
+	//background-color: #C9C;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	//background-color: #9C9;
+	//overflow:hidden;
+}
+
+#wrapper{
+	width: 55%;
+	height:auto;
+	margin-top: -33px;
+	position: absolute;
+	float: left;
+	//background:orange;
+	//overflow:hidden;
+}
+
+#container #wrapper .face{
+	//background-color: #303;
+	height: 300px;
+	width: 7%;
+	float:left;
+	margin-top:4.3%;
+	
+}
+
+
+
+#container #wrapper .face .twit{
+	//background-color: #C3C;
+	height: 39px;
+	width: 100%;
+	margin-left:23%;
+}
+#container #wrapper .face .twit .fa {
+	font-size: 35px;
+	color: #FFF;
+	background-color: #09C;
+	padding: 3%  20%;
+	cursor:pointer;
+}
+#container #wrapper .face .bird{
+	//background-color: #C3C;
+	height: 39px;
+	width: 100%;
+	margin-left:23%;
+}
+#container #wrapper .face .bird .fa {
+	font-size: 45px;
+	color: #FFF;
+	background-color: #11C4FF;
+	cursor:pointer;
+}
+#container #wrapper .face .letter {
+	//background-color: #000;
+	height: 39px;
+	width: 100%;
+	margin-left:23%;
+}
+#container #wrapper .face .letter .fa{
+	font-size: 29px;
+	color: #fff;
+	background-color: #663;
+	padding: 12%;
+	cursor:pointer;
+}
+#container #wrapper .face .print{
+	//background-color: #000;
+	height: 39px;
+	width: 100%;
+	margin-left:23%;
+}
+#container #wrapper .face .print .fa{
+	font-size: 31px;
+	color: #fff;
+	background-color: #339;
+	padding: 12%;
+	cursor:pointer;
+}
+
+
+#container #wrapper .content{
+	background-color: #fff;
+	height: 700px;
+	width: 93%;
+	position: relative;
+	margin-bottom: 1%;
+	float: right;
+}
+
+	
+
+#container #wrapper .content #box{
+	background-color: #663;
+	height: 45%;
+	width: 90%;
+	margin-top:5%;
+	margin-left:5%;
+}
+
+
+#container #wrapper .content img {
+	height: 100%;
+	width: 100%;
+	margin: 0 auto;
+}
+#container #wrapper .content #yazi {
+	//background-color: #0CC;
+	height: 33%;
+	width: 90%;
+	margin-left:5%;
+}
+#container #wrapper .content #yazi h1{
+	color: #f64f2c;
+	padding-top: 3%;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-weight: bold;
+}
+#container #wrapper .content #yazi p{
+	font-size: 20px;
+	color: #999;
+	padding-top: 1%;
+	margin-bottom: 2.5%;
+}
+#container #wrapper .content #icon{
+	//background-color: #000;
+	height: 10%;
+	width: 90%;
+	margin-left: 5%;
+}
+#container #wrapper .content #icon .sosiall{
+	//background-color: #396;
+	float: left;
+	height: 100%;
+	width: 19%;
+	margin-right: 0.1%;
+
+}
+#container #wrapper .content #icon .fa{
+	font-size: 24px;
+	color: #CCC;
+	background-color: #FFF;
+	margin-top:10%;
+}
+#container #wrapper .content #icon a{
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	color: #000;
+	text-decoration: none;
+	margin-top: 10%;
+	font-size:16px;
+	
+}
+#container #wrapper .content #icon .data{
+    //background-color: #396;
+	float: left;
+	height: 100%;
+	width: 19%;
+	margin-right: 0.1%;
+}
+	
+#container #wrapper .content #icon .commet{
+	 //background-color: #396;
+	float: left;
+	height: 100%;
+	width: 19%;
+	margin-right: 0.1%;
+	
+}
+	#container #wrapper .content #icon .heart{
+	 //background-color: #396;
+	float: left;
+	height: 100%;
+	width: 19%;
+	margin-right: 0.1%;
+}
+#container #wrapper .content #icon .eye{
+	 //background-color: #396;
+	float: left;
+	height: 100%;
+	width: 19%;
+	margin-right: 0.1%;
+}
+
+
+#container #aside{
+	//background-color: #CF9;
+	height: 1200px;
+	width: 30%;
+	float: right;
+	//overflow:hidden;
+	position: relative;
+}
+#container #aside #asidefoto{
+	background-color: #fff;
+	height: 170px;
+	width: 100%;
+	margin:0 auto;
+	//margin-top:2%;
+}
+#container #aside #asidefoto #into {
+	//background-color: #3C9;
+	height: 150px;
+	width: 80%;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	padding-top: 5%;
+	padding-bottom: 1%;
+}
+#container #aside #asidefoto #into img{
+	height: 100%;
+	width: 100%;
+}
+#container #aside #sign{
+	background-color: #fff;
+	height: 235px;
+	width: 100%;
+	margin: 0 auto;
+	margin-top:0.5%;
+}
+#container #aside #sign #signinto{
+	//background-color: #0F9;
+	height: 100%;
+	width: 80%;
+	margin:0 auto;
+}
+
+#container #aside #sign h1{
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-size: 22px;
+	font-weight: bold;
+	padding-top:10%;
+}
+#container #aside #sign p{
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-size: 18px;
+	color: #999;
+}
+#container #aside #sign #signinto input{
+	height: 40px;
+	width: 100%;
+	border:2px solid #000;
+	margin-top:5%;
+	padding-left:3%;
+}
+#container #aside #sign #signinto button{
+	color: #FFF;
+	background-color: #F30;
+	height: 30px;
+	width: 31%;
+	margin-top:6%;
+	text-align: center;
+	cursor:pointer;
+	transition-duration: 0.4s; 
+	border:none;
+}
+#container #aside #sign #signinto button:hover{
+	background-color: #036;
+}
+
+#container #aside #mainclass{
+	background-color: #fff;
+	height: 850px;
+	width: 100%;
+	margin-top:0.5%;
+}
+#container #aside #mainclass #secondclass{
+	//background-color: #666;
+	height: 850px;
+	width: 80%;
+	margin:0 auto;
+}
+#container #aside #mainclass #secondclass h1{
+	font-size: 25px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	padding-top:7%;
+}
+#container #aside #mainclass #secondclass .classes{
+	//background-color: #996;
+	height: 140px;
+	width: 100%;
+}
+#container #aside #mainclass #secondclass .classes .classesfoto{
+	height: 70%;
+	width: 40%;
+	//background-color: #03C;
+	margin-top:5%;
+}
+
+#container #aside #mainclass #secondclass .classes .classesfoto img{
+	height: 100%;
+	width: 100%;
+}
+#container #aside #mainclass #secondclass .classes .classesword{
+	//background-color: #399;
+	height: 70%;
+	width: 57%;
+	float: right;
+	margin-top:-36%;
+	
+}
+#container #aside #mainclass #secondclass .classes .classesword h1{
+	font-size: 22px;
+	color: #333;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+}
+
+
+footer{
+	background-color: #9F9;
+	height: 430px;
+	width: 100%;
+	overflow::hidden;
+}
+
+footer #color{
+	background-color: #151515;
+	height: 320px;
+	width: 100%;
+}
+footer #word{
+	background-color: #151515;
+	height: 320px;
+	width: 80%;
+	margin: 0 auto;
+	padding-top: 3%;
+}
+footer #word #look{
+	//background-color: #9FF;
+	height: 280px;
+	width: 35%;
+}
+
+footer #word #look h1{
+	padding: 4%;
+	background-color: #f64f2c;
+	font-size: 28px;
+	text-align: center;
+	color: #FFF;
+}
+footer #word #look p{
+	font-size: 24px;
+	color: #FFF;
+}
+
+footer #word #feed{
+	//background-color:  #9FF;
+	height: 280px;
+	width: 20%;
+	float: right;
+	margin-top: -24.6%;
+	margin-right:30%;
+}
+footer #word #feed h1{
+	font-size: 32px;
+	text-align: center;
+	color: #FFF;
+}
+
+footer #word #feed p{
+	font-size: 20px;
+	color: #FFF;	
+}
+
+
+footer #word #link{
+	//background-color:  #9FF;
+	height: 280px;
+	width: 20%;
+	float: right;
+	margin-top: -24.6%;
+}
+footer #word #link h1{
+	text-align: center;
+	color: #FFF;
+}
+footer #word #link p{
+	font-size: 22px;
+	color: #FFF;
+}
+footer #fnav{
+	background-color:#f64f2c;
+	height: 54px;
+	width: 100%;
+	position:absolute;
+	margin-top:22%;
+	
+}
+footer #fnav #ortalama{
+	height: 54px;
+	width: 85%;
+	margin:0 auto;
+}
+footer #end{
+	background-color: #ECBD00;
+	height: 65px;
+	width: 100%;
+	position: absolute;
+	margin-top: 25.8%;
+}
+	
+footer #end #blogend{
+	background-color: #ECBD00;
+	height: 65px;
+	width: 50%;
+	margin:0 auto;
+}
+footer #end #blogend p{
+	text-align: center;
+	font-size: 16px;
+	padding-top:3%;
+}
+
+@media screen and (max-width: 680px) {
+    body {
+        background-color: lightgreen;
+    }
+}
