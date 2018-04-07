@@ -1,0 +1,231 @@
+@media only screen and (max-width:1300px) {
+		header .top-view .head nav {
+		//background:orange;
+	}
+	
+	header .top-view .head, header .top-view #head-container {
+		width:90%;
+	}
+	
+	.container {
+		width:90%;
+	}
+}
+
+@media only screen and (max-width:1140px) {
+	header .top-view .head nav {
+		//background:orange;
+	}
+	
+	header .top-view #head-container {
+		margin-top:25%;
+	}
+	
+	.view, .view2 {
+		width:31%;
+	}
+}
+
+
+@media only screen and (max-width:990px) {
+	header {
+		height:600px;
+	}
+
+	header .top-view {
+		height:600px;
+	}
+	header .top-view .head nav {
+		//background:orange;
+	}
+	
+	.container .content .box-1{
+		width:98%;
+		float:none;
+		padding-left:10%;
+		padding-right:10%;
+	}
+	
+	.container .content .box-2, .container .content .box-3 {
+		width:48%;
+		float:left;
+	}
+	
+	.container .content .box-2 {
+		padding-left:10%;
+	}
+	
+	.container .content .box-3 {
+		transform:translate(-100px);
+		//background:red;
+	}
+	
+	.container .content .box .fa {
+		font-size:30px;
+		padding:20px;
+		padding-left:25px;
+		padding-right:25px;
+	}
+	
+	.view, .view2 {
+		width:47%;
+	}
+}
+
+@media only screen and (max-width:850px) {
+	header .top-view .head .top {
+		display:block;
+		margin-bottom:2%;
+	}
+	
+	header .top-view .head nav {
+		width:100%;
+		float:none;
+		//background:orange;
+		border-top:1px solid #fff;
+		overflow:hidden;
+		
+	}
+	
+	header .top-view .head #social {
+		width:60%;
+	}
+	
+	header .top-view .head nav #link {
+		float:right;
+		display:none;
+	}
+	
+	header .top-view #head-container {
+		margin-top:18%;
+	}
+	
+	.container .content .box {
+		width:50%;
+		margin-bottom:3%;
+	}
+}
+
+@media only screen and (max-width:770px) {
+	.container .content .box-2, .container .content .box-3 {
+		width:50%;
+		margin:0;
+	}
+
+	.container .content .box-3 {
+		transform:translate(-80px);
+		//background:red;
+	}
+	
+	.container .cat {
+		padding-left:5%;
+	}
+	
+	.container .content .box .img a img {
+		width:80%;
+	}
+	
+	.container .content .box .post {
+		width:80%;
+		margin-left:10%;
+	}
+	
+	
+	.view, .view2 {
+		width:97%;
+		float:none;
+	}
+	
+	.view img, .view2 img {
+		width: 80%;
+		margin-left:10%;
+	}
+	
+	.view .mask, .view2 .mask2 {
+		width: 80%;
+		margin-left:10%;
+	}
+	
+	.view2 p {
+		margin-top:0%;
+	}
+	
+	#top-footer .container .left, #top-footer .container .search{
+		width:100%;
+		float:none;
+		margin-bottom:3%;
+	}
+
+}
+
+@media only screen and (max-width:770px) {
+	header {
+		height:500px;
+	}
+
+	header .top-view {
+		height:500px;
+	}
+	
+	header .top-view .head #social {
+		width:80%;
+	}
+	
+	header .top-view #head-container > a {
+		width:80%;
+		margin-left:10%;
+	}
+	
+	header .top-view #head-container p {
+		width:80%;
+		margin-left:10%;
+	}
+	
+	header .top-view .head nav #link li {
+		float:none;
+	}
+	
+	.container .content .box-2 {
+		width:40%;
+		margin-top:7%;
+	}
+	
+	.container .content .box-3 {
+		transform:translate(-30px);
+	}
+	
+	.container .content .box-3 img {
+		height:80%;
+	}
+	
+	.container .content .box {
+		width:100%;
+		float:none;
+	}
+	
+	.container .cat {
+		padding-left:8%;
+		padding-right:8%;
+	}
+	
+	.container .cat a {
+		margin-bottom:2%;
+		float:none;
+		display:block;
+	}
+	
+	.container .content .contact {
+		width:100%;
+		float:none;
+		margin:0;
+	}
+	
+	.container .content form input {
+		float:none;
+	}
+
+.container .content form input[type=text] {
+		width:100%;
+		margin:0;
+	}
+}

@@ -1,0 +1,371 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spicy Club</title>
+<!--<link rel="stylesheet" type="text/css" href="fontawesome-free-5.0.6/web-fonts-with-css/css/fontawesome.min.css">-->
+<link rel="stylesheet" type="text/css" href="css/spicy.css">
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+	header{
+	background-image: url('img/bg3.jpg');
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+	background-size:cover;
+	}
+</style>
+
+<script src="jquery-3.3.1.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+
+<script type = "text/javascript">
+	function MenuOpen(){
+		$('#link').toggle("slow");
+	}
+	
+	   $(window).scroll(function () {
+        if ($(this).scrollTop()) {
+            $('#toTop').fadeIn();
+        } else {
+            $('#toTop').fadeOut();
+        }
+    });
+    $("#toTop").click(function () {
+        $("html, body").animate({ scrollTop: 0 }, 1000);
+    });
+	
+	
+	$(function() {
+	
+		function filterPath(string) {
+			return string
+			.replace(/^\//,'')
+			.replace(/(index|default).[a-zA-Z]{3,4}$/,'')
+			.replace(/\/$/,'');
+		}
+	
+		var locationPath = filterPath(location.pathname);
+		var scrollElem = scrollableElement('html', 'body');
+	
+		// Any links with hash tags in them (can't do ^= because of fully qualified URL potential)
+		$('a[href*=#]').each(function() {
+	
+			// Ensure it's a same-page link
+			var thisPath = filterPath(this.pathname) || locationPath;
+			if (  locationPath == thisPath
+				&& (location.hostname == this.hostname || !this.hostname)
+				&& this.hash.replace(/#/,'') ) {
+	
+					// Ensure target exists
+					var $target = $(this.hash), target = this.hash;
+					if (target) {
+	
+						// Find location of target
+						var targetOffset = $target.offset().top;
+						$(this).click(function(event) {
+	
+							// Prevent jump-down
+							event.preventDefault();
+	
+							// Animate to target
+							$(scrollElem).animate({scrollTop: targetOffset}, 400, function() {
+	
+								// Set hash in URL after animation successful
+								location.hash = target;
+	
+							});
+						});
+					}
+			}
+	
+		});
+	
+		// Use the first element that is "scrollable"  (cross-browser fix?)
+		function scrollableElement(els) {
+			for (var i = 0, argLength = arguments.length; i <argLength; i++) {
+				var el = arguments[i],
+				$scrollElement = $(el);
+				if ($scrollElement.scrollTop()> 0) {
+					return el;
+				} else {
+					$scrollElement.scrollTop(1);
+					var isScrollable = $scrollElement.scrollTop()> 0;
+					$scrollElement.scrollTop(0);
+					if (isScrollable) {
+						return el;
+					}
+				}
+			}
+			return [];
+		}
+	
+	});
+	
+	
+</script>
+
+<body>
+<section id="#home">
+  <header>
+    	<!--<img src="img/bg.jpg" />-->
+
+    <div class="top-view">
+    	<div class="head">
+    		<div id="social">
+				<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+				<!--<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>-->
+				<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+				<!---<a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>-->
+				<i class="fa fa-flag"></i><a href="#">ru</a><a href="#">en</a>
+       	 	</div>
+            
+			<ul class="top">
+				<li class="res"><a href="javascript:void(0);" onclick="MenuOpen()"><i class="fa fa-bars" aria-hidden="true"></i></a></li>
+			</ul>
+			
+            <nav>
+            	<ul id="link">
+                	<li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#team">Islerim</a></li>
+                    <li><a href="#blog"> Biliklerim</a></li>
+                    <li><a href="#mail">Contact us</a></li>
+                </ul>
+       	 	</nav>
+        </div>
+		
+		
+		<div id="head-container">
+			<a href="index.html#home">TEMB</a>
+			<p>WEB DEVELOPER -> Front and Backend </p>
+		</div>
+    </div>
+    
+  </header>
+</section>
+
+
+
+
+<section id="about">
+	<div class="container">
+	
+		<div class="h1">
+			<h1>ABOUT ME</h1>
+		</div>
+		
+		<div class="content">
+			<div class="box-1">
+				<i class="fa fa-quote-left"></i><h4>LOREM IPSUM DOLOR SIT AMET</h4>
+				<p>
+					Ut fringilla euismod sagittis. Cras semper ante sapien, in ornare nisi euismod eu. Morbi dapibus est non leo vestibulum aliquet. Sed viverra nisi pharetra, scelerisque nisi eu, tempus nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In pellentesque, lectus at auctor luctus, lacus nibh dignissim ante, sed maximus arcu odio vitae lectus.
+Phasellus vestibulum velit sed nisi ultricies scelerisque. Vivamus ligula mauris, euismod in dictum id, tempus ac odio. Etiam tristique felis eros, tincidunt interdum elit gravida et. Donec porttitor vehicula tortor, malesuada aliquet nibh finibus ac. Maecenas consectetur nisi ipsum, blandit finibus quam tristique vitae.
+				</p>
+				<!--<a href="#">MORE</a>-->
+			</div>
+			
+			<div class="box-2">
+				<img src="img/1.jpg" />
+			</div>
+			
+			<div class="box-3">
+				<img src="img/4.png" />
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+<section id="team">
+	
+    <div class="container">
+		<div class="h1 iki">
+			<h1>OUR TEAM</h1>
+		</div>
+        
+        <div class="content">
+        
+        	<div class="view">
+            	<img src="img/1.jpg"/>
+   				<div class="mask">
+      				<h2>Empire State</h2>
+     				 <p>A cool description of some sort between these tags. I am so cool and awesomely awesome.</p>
+                     <div class="icon">
+      					<a href="#" class="info"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#" class="info"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#" class="info"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                     </div>
+   				 </div>
+           </div>
+           
+           
+           <div class="view">
+            	<img src="img/2.jpg"/>
+   				<div class="mask">
+      				<h2>Empire State</h2>
+     				 <p>A cool description of some sort between these tags. I am so cool and awesomely awesome.</p>
+                     <div class="icon">
+      					<a href="#" class="info"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#" class="info"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#" class="info"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                     </div>
+   				 </div>
+           </div>
+           
+           
+           <div class="view">
+            	<img src="img/3.jpg"/>
+   				<div class="mask">
+      				<h2>Empire State</h2>
+     				 <p>A cool description of some sort between these tags. I am so cool and awesomely awesome.</p>
+                     <div class="icon">
+      					<a href="#" class="info"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#" class="info"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#" class="info"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                     </div>
+   				 </div>
+           </div>
+           
+           
+           <div class="view">
+            	<img src="img/4.png"/>
+   				<div class="mask">
+      				<h2>Empire State</h2>
+     				 <p>A cool description of some sort between these tags. I am so cool and awesomely awesome.</p>
+                     <div class="icon">
+      					<a href="#" class="info"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#" class="info"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#" class="info"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                     </div>
+   				 </div>
+           </div>
+           
+        </div>
+    </div>
+	
+</section>
+
+
+
+<section id="blog">
+
+	<div class="container">
+		<div class="h1">
+			<h1>OUR BLOG</h1>
+		</div>
+        
+         <div class="content">
+        
+        	<div class="view2">
+            	<a href="#"><img src="img/1.jpg"/></a>
+                <div class="mask2">
+                	<h3 class="head">LOREM IPSUM</h3>
+                    <p>By <!--<a href="#" class="link">Admin</a>--> on Nov 02, 2016</p>
+                </div>
+            </div>
+            
+            
+			<div class="view2">
+            	<a href="#"><img src="img/1.jpg"/></a>
+                <div class="mask2">
+                	<h3 class="head">LOREM IPSUM</h3>
+                    <p>By <!--<a href="#" class="link">Admin</a>--> on Nov 02, 2016</p>
+                </div>
+            </div>
+            
+            
+            <div class="view2">
+            	<a href="#"><img src="img/1.jpg"/></a>
+                <div class="mask2">
+                	<h3 class="head">LOREM IPSUM</h3>
+                    <p>By <!--<a href="#" class="link">Admin</a>--> on Nov 02, 2016</p>
+                </div>
+            </div>
+            
+            <div class="view2">
+            	<a href="#"><img src="img/1.jpg"/></a>
+                <div class="mask2">
+                	<h3 class="head">LOREM IPSUM</h3>
+                    <p>By <!--<a href="#" class="link">Admin</a>--> on Nov 02, 2016</p>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+
+</section>
+
+
+<section id="mail">
+	<div class="container">
+		<div class="h1 uc">
+			<h1>CONTACT US</h1>
+		</div>
+        
+         <div class="content">
+         	<div class="contact">
+            	<h3>ADDRESS :</h3>
+                <p>Eiusmod Tempor inc
+St Dolore Place,
+San Francisco 56777</p>
+            </div>
+            
+            <div class="contact">
+            	<h3>PHONE :</h3>
+                <p>+2 123 456 789</p>
+				<p>+2 987 654 321</p>
+            </div>
+            
+            <div class="contact">
+            	<h3>EMAIL :</h3>
+                <a href="mailto:example@email.com">mail@example.com</a>
+            </div>
+            
+         </div>  
+         
+         <div class="content">
+			<div class="alert"><i class="fa fa-check"></i> <p>Mailiniz gonderildi..</p></div>
+            <form>
+            	<h3>CONTACT FORM</h3>
+                <input type="text" placeholder="Full Name">
+                 <input type="text" placeholder="Phone">
+                  <input type="text" placeholder="Email">
+                   <input type="text" placeholder="Subject">
+                   <textarea placeholder="Message"></textarea>
+                   <input type="submit" value="SEND">
+            </form>
+         </div>
+    </div>
+</section>
+
+<div id="top-footer">
+	<div class="container">
+		<div class="left">
+			<h6>Subscribe to our email newsletter to receive updates</h6>
+		</div>
+		
+		<!--<div class="search">
+			<form>
+				<input type="text" placeholder="Subscribe">
+				<button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+			</form>
+		</div>-->
+	</div>
+</div>
+
+<div id="bottom-foot">
+	<address>&copy; 2017 Spicy Club. All rights reserved | Design by <a href="#">W3layouts</a></address>
+</div>
+
+
+<div id='toTop'>
+    <span><i class="fa fa-chevron-up" aria-hidden="true"></i></span>
+</div>
+
+</body>
+</html>
